@@ -26,6 +26,7 @@ if __name__ == "__main__":
 
     Settings.llm = OpenAI()
     Settings.embed_model = OpenAIEmbedding()
+    Settings.node_parser = node_parser
 
     index_name = "llamaindex-documentation-helper"
     pc = Pinecone(api_key=os.environ["PINECONE_API_KEY"])
